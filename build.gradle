@@ -67,7 +67,7 @@ cargo {
     containerId = 'tomcat7x'
     port = 6060
     deployable {
-    context = '/'
+    context = 'hrms'
     }
     remote {
         hostname = '192.168.0.9'
