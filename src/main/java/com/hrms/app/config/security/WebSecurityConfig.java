@@ -32,11 +32,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter
 	{
 		http.authorizeRequests()
 			.antMatchers("/","/login","/image/*","/scriptlib/**","/css/**").permitAll()
-			//.antMatchers("/home").hasAnyRole("USER")
+			.antMatchers("/home").hasAnyAuthority("ADMIN")
 			.anyRequest().fullyAuthenticated()
 			.and()
 			.formLogin()
-			//.antMatchers("/home/**").access("hasRole('ADMIN')")
 			.loginPage("/login").defaultSuccessUrl("/home", true).permitAll()
 			.failureUrl("/login?error")
 			.usernameParameter("username").passwordParameter("password")

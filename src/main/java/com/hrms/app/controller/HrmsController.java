@@ -47,4 +47,10 @@ public class HrmsController
 	public String accessDenied(){
 		return "403";
 	}
+	
+	@PreAuthorize("hasAuthority('ADMIN')")
+	@RequestMapping(value="/add-user")
+	public String addUser(){
+		return "admin/add_user";
+	}
 }

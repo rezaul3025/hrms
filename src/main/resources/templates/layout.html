@@ -6,6 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" media="all"
       th:href="@{/scriptlib/bootstrap-3.3.4-dist/css/bootstrap.min.css}"/>
+      <link rel="stylesheet" type="text/css" media="all"
+      th:href="@{/scriptlib/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css}"/>
       <style type="text/css">
       	body {
   padding-top: 40px;
@@ -106,5 +108,7 @@ code {
       
     </div>
     <div th:replace="fragments/footer :: footer">&copy; 2014 The Static Templates</div>
+    <script th:src="@{/scriptlib/jquery/js/jquery-1.11.3.min.js}"></script>
+    <script th:src="@{/scriptlib/bootstrap-3.3.4-dist/js/bootstrap.min.js}"></script>
   </body>
 </html>
