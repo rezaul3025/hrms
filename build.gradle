@@ -48,7 +48,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     compile('org.springframework.boot:spring-boot-starter-security')
-    compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity3:1.0.0-beta1')
+    //compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity3:1.0.0-beta1')
     testCompile("org.springframework.boot:spring-boot-starter-test") 
     compile('mysql:mysql-connector-java:5.1.29')
     //compile('com.oracle:ojdbc6:11.2.0.4')
