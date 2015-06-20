@@ -21,7 +21,7 @@ public class HrmsController
 		user.setUserName("tom");
 		user.setPassword("pass");
 		user.setEnabled(true);
-		//userService.create(user);
+		userService.create(user);
 		return "login";
 	}
 	
