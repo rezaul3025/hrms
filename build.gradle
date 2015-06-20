@@ -65,7 +65,7 @@ eclipse {
 
 cargo {
     containerId = 'tomcat7x'
-    port = 9090
+    port = 6060
     deployable {
     context = 'hrms'
     }
