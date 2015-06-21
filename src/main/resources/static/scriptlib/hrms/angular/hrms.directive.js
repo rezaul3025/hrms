@@ -9,3 +9,13 @@ var cgNgapp = angular.module('hrmsApp',[]);
     	  }
     	  
       });
+      
+      cgNgapp.directive('cgTextArea', function(){
+    	  
+    	  return{
+    		  restrict: 'AE',
+    		  replace:true,
+    		  template:'<textarea class="form-control" rows="3"></textarea>'
+    	  }
+    	  
+      });
