@@ -10,6 +10,16 @@ var cgNgapp = angular.module('hrmsApp',[]);
     	  
       });
       
+      cgNgapp.directive('cgPassword', function(){
+    	  
+    	  return{
+    		  restrict: 'AE',
+    		  replace:true,
+    		  template:'<input type="password" class="form-control" />'
+    	  }
+    	  
+      });
+      
       cgNgapp.directive('cgTextArea', function(){
     	  
     	  return{
