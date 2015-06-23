@@ -23,9 +23,6 @@ public class Role implements Serializable
 	private Integer id;
 	@Column(name="role")
 	private String role;
-	@ManyToOne(fetch = FetchType.LAZY, targetEntity=User.class)
-	@JoinColumn(name="username", nullable=false, referencedColumnName="username")
-	private User user;
 	
 	public Integer getId()
 	{
@@ -42,14 +39,6 @@ public class Role implements Serializable
 	public void setRole(String role)
 	{
 		this.role = role;
-	}
-	public User getUser()
-	{
-		return user;
-	}
-	public void setUser(User user)
-	{
-		this.user = user;
 	}
 
 }
