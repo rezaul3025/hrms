@@ -6,6 +6,10 @@
   </head>
   <body>
     <!-- /* Content of this page will be decorated by the elements of layout.html (task/layout) */ -->
+    <div layout:fragment="sidebar">
+    	<div th:replace="fragments/sidebar :: sidebar">
+    	</div>
+    </div>
     <div layout:fragment="content">
       <table class="table table-bordered table-striped">
         <thead>
